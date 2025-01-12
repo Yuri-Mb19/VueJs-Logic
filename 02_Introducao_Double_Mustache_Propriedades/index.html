@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app">
+        {{ mensagem }}<br>
+        Valor total: {{valorTotal}}<br>
+        Logado: {{ logado }}<br>
+        Hobbie: {{ hobbies }}<br>
+        perfil: {{ perfil }}
+    </div>
+    <script>
+
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                mensagem: 'Primeiro Template controlado pelo Vue',
+                valorTotal: 150.47,
+                logado: false,
+                hobbies: [
+                    'Dormir',
+                    'Colecionar Video games antigos',
+                    'Gym',
+                    'Futebol'
+                ],
+                perfil: {
+                    nome: 'Yuri Mbalane',
+                    site: 'mygas.co.mz',
+                    idade: 25,
+                    cursos: [
+                        {
+                            nome: 'Laravel',
+                            cargaHoraria: '50 horas'
+                        },
+                        {
+                            nome: 'Bancos de Dados Relacionas',
+                            cargaHoraria: '40 Horas'
+                        }
+                    ]
+                }
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
